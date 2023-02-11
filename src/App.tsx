@@ -1,8 +1,8 @@
-import Navbar from "./components/Navbar";
-import RequestInvite from "./components/RequestInvite";
-import WhyEasybank from "./components/WhyEasybank";
-import Articles from "./components/Articles";
-import Footer from "./components/Footer";
+import Navbar from "./components/navbar/Navbar";
+import RequestInvite from "./components/intro/RequestInvite";
+import WhyEasybank from "./components/service/WhyEasybank";
+import Articles from "./components/article/Articles";
+import Footer from "./components/footer/Footer";
 
 function App() {
     return (

@@ -32,11 +32,13 @@ const Articles = () => {
         },
     ]
 
-    return (<div className='py-20 flex flex-col items-center bg-[#fafafa]'>
-        <h1 className='text-3xl mb-5 tracking-wide mb-8'>Latest Articles</h1>
-        {data.map((e, i)=>(
-            <Article key={i} img={e.img} img_alt={e.img_alt} author={e.author} topic={e.topic} content={e.content}/>
-        ))}
+    return (<div className='py-20 flex flex-col items-center bg-[#fafafa] sm:px-[8rem] sm:items-start'>
+        <h1 className='text-3xl mb-5 tracking-wide mb-8 sm:px-7'>Latest Articles</h1>
+        <div className='flex flex-col sm:flex-row'>
+            {data.map((e, i) => (
+                <Article key={i} img={e.img} img_alt={e.img_alt} author={e.author} topic={e.topic} content={e.content}/>
+            ))}
+        </div>
     </div>)
 }
 

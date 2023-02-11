@@ -23,13 +23,13 @@ const WhyEasybank = () => {
             content: 'Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.',
         },
     ]
-    return (<div className='py-20 bg-[#f3f4f6]'>
-        <div className='flex flex-col items-center gap-4 mb-12'>
-            <h1 className='text-3xl px-10 text-center text-[#2d314d]'>Why Choose Easybank?</h1>
-            <p className='text-center text-sm px-8 text-[#9698a6]'>We leverage Open Banking to turn your bank account into your financial hub. Control
+    return (<div className='py-20 bg-[#f3f4f6] sm:px-[8rem]'>
+        <div className='flex flex-col items-center gap-4 mb-12 sm:items-start'>
+            <h1 className='text-3xl px-10 text-center text-[#2d314d] sm:text-left sm:px-7'>Why Choose Easybank?</h1>
+            <p className='text-center text-sm px-8 text-[#9698a6] sm:w-[35rem] sm:text-left'>We leverage Open Banking to turn your bank account into your financial hub. Control
                 your finances like never before.</p>
         </div>
-        <div>
+        <div className='flex flex-col sm:flex-row'>
             {
                data.map((e, i)=>(
                    <Card key={i} img={e.img} header={e.header} content={e.content}/>
