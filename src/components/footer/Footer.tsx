@@ -14,10 +14,10 @@ const pageDetail = {
 }
 const Footer = () => {
     return (
-        <div className='bg-[#2d314d] text-white flex flex-col p-6'>
-            <div className='flex flex-col items-center gap-9'>
-                <div className='flex flex-col items-center gap-7'>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" className='fill-white'>
+        <div className='bg-[#2d314d] text-white flex flex-col p-6 sm:px-[8rem]'>
+            <div className='flex flex-col items-center gap-9 sm:flex-row sm:justify-between'>
+                <div className='flex flex-col items-center gap-7 sm:gap-14'>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" className='cursor-pointer'>
                         <defs>
                             <linearGradient id="a" x1="72.195%" x2="17.503%" y1="0%" y2="100%">
                                 <stop offset="0%" stop-color="#33D35E"/>
@@ -35,24 +35,28 @@ const Footer = () => {
                         </g>
                     </svg>
                     <div className='flex gap-4'>
-                        <img src={pageDetail.facebook_icon} alt={pageDetail.facebook_alt} className='w-7'/>
-                        <img src={pageDetail.youtube_icon} alt={pageDetail.youtube_alt} className='w-7'/>
-                        <img src={pageDetail.twitter_icon} alt={pageDetail.twitter_alt} className='w-7'/>
-                        <img src={pageDetail.pinterest_icon} alt={pageDetail.pinterest_alt} className='w-7'/>
-                        <img src={pageDetail.instagram_icon} alt={pageDetail.instagram_alt} className='w-7'/>
+                        <img src={pageDetail.facebook_icon} alt={pageDetail.facebook_alt} className='cursor-pointer w-7 sm:w-6 sm:h-6'/>
+                        <img src={pageDetail.youtube_icon} alt={pageDetail.youtube_alt} className='cursor-pointer w-7 sm:w-6 sm:h-6'/>
+                        <img src={pageDetail.twitter_icon} alt={pageDetail.twitter_alt} className='cursor-pointer w-7 sm:w-6 sm:h-6'/>
+                        <img src={pageDetail.pinterest_icon} alt={pageDetail.pinterest_alt} className='cursor-pointer w-7 sm:w-6 sm:h-6'/>
+                        <img src={pageDetail.instagram_icon} alt={pageDetail.instagram_alt} className='cursor-pointer w-7 sm:w-6 sm:h-6'/>
                     </div>
                 </div>
-                <div className='text-white mt-1'>
-                    <ul className='flex flex-col gap-3 text-center text-xl'>
-                        <li>About Us</li>
-                        <li>Contact</li>
-                        <li>Blog</li>
-                        <li>Careers</li>
-                        <li>Support</li>
-                        <li>Privacy Policy</li>
+                <div className='text-white mt-1 sm:mt-0 '>
+                    <ul className='flex flex-col text-center text-xl sm:flex-row sm:text-left sm:gap-24 sm:text-sm items-center'>
+                        <div className='flex flex-col gap-3'>
+                            <li className='cursor-pointer'>About Us</li>
+                            <li className='cursor-pointer'>Contact</li>
+                            <li className='cursor-pointer'>Blog</li>
+                        </div>
+                        <div className='flex flex-col gap-3 mt-[0.75rem] sm:mt-0'>
+                            <li className='cursor-pointer'>Careers</li>
+                            <li className='cursor-pointer'>Support</li>
+                            <li className='cursor-pointer'>Privacy Policy</li>
+                        </div>
                     </ul>
                 </div>
-                <div className='flex flex-col items-center gap-6 mb-3'>
+                <div className='flex flex-col items-center gap-6 mb-3 sm:items-end'>
                     <button
                         className='py-4 px-10 rounded-full text-white cursor-pointer bg-gradient-to-r from-[#31d35c] to-[#2bb7da] font-bold tracking-wide mt-4'>Request
                         Invite

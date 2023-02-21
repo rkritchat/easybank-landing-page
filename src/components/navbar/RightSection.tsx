@@ -4,10 +4,10 @@ const pageDetail = {
 }
 const RightSection = () => {
     return (
-        <section className=''>
+        <section>
             <img src={pageDetail.hamburger} alt={pageDetail.hamburger_alt} className='w-8 sm:hidden'/>
             <div className='hidden sm:flex items-center justify-between gap-[15rem]'>
-                <ul className='flex gap-6'>
+                <ul className='flex gap-6 text-[#9698a6] cursor-pointer'>
                     <li>Home</li>
                     <li>About</li>
                     <li>Contact</li>

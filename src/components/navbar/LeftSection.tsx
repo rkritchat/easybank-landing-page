@@ -5,7 +5,7 @@ const pageDetail = {
 
 const LeftSection = () => {
     return (<section>
-        <img src={pageDetail.logo} alt={pageDetail.logo_alt} className='w-[10rem]'/>
+        <img src={pageDetail.logo} alt={pageDetail.logo_alt} className='w-[10rem] cursor-pointer'/>
     </section>)
 }
 
